@@ -53,6 +53,5 @@ threading.Thread(target=run_server, daemon=True).start()
 import os
 # 直接トークンを書かずに、Renderの設定（DISCORD_TOKEN）を読み込む
 bot.run(os.getenv('DISCORD_TOKEN'))
-bot.run(token)
 
 
