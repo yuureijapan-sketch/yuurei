@@ -6,7 +6,7 @@ import threading
 import os
 
 
-# Render用のダミーサーバー（これがないとRenderに止められます）
+# Render用のダミーサーバー（これがないとRenderに止められます
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
