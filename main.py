@@ -3,6 +3,8 @@ from discord.ext import commands
 import os
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import threading
+import os
+
 
 # Render用のダミーサーバー（これがないとRenderに止められます）
 class MyHandler(BaseHTTPRequestHandler):
@@ -49,5 +51,8 @@ threading.Thread(target=run_server, daemon=True).start()
 
 # ボット起動
 import os
-bot.run(os.getenv('DISCORD_TOKEN'))
+# 直接トークンを書かずに、Renderの設定（DISCORD_TOKEN）を読み込む
+token = os.getenv('DISCORD_TOKEN')
+bot.run(token)
+
 
