@@ -22,8 +22,8 @@ intents.message_content = True
 intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-NOTIFICATION_CHANNEL_ID = 1492487369679572992  # あなたのID
-MONITOR_CHANNEL_ID = 1492506054851039283      # あなたのID
+NOTIFICATION_CHANNEL_ID = 1492506054851039283   # あなたのID
+MONITOR_CHANNEL_ID = 1492487369679572992     # あなたのID
 
 @bot.event
 async def on_ready():
