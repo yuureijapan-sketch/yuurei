@@ -48,4 +48,6 @@ async def on_raw_reaction_add(payload):
 threading.Thread(target=run_server, daemon=True).start()
 
 # ボット起動
-bot.run('MTQ5NjA1NzMxNDIzNzc0NzI4MA.G28IGZ.bcl4-EgpLpnYO22DejERnjf8RSB9TLZPY-SLmI')
+import os
+bot.run(os.getenv('DISCORD_TOKEN'))
+
